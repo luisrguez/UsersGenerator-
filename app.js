@@ -10,8 +10,12 @@ const app = Vue.createApp({
         }
       },
       methods: {
-        printName() {
-            console.log(this.name);
+        getUser() {
+            this.name = 'Danna'
+            this.lastName =  'Hernandez'
+            this.mail = 'dp.hernandezb@hotmail.com'
+            this.gender =  'female'
+            this.photo = 'https://randomuser.me/api/portraits/women/57.jpg'
         }
       }
 }) 
