@@ -10,10 +10,10 @@
 <body>
 
     <div id="app">
-        <img v-bind:src="photo" alt="user image">
+        <img v-bind:src="photo" alt="user image" :class="gender">
         <h1>{{ name }} {{ lastName }}</h1>
         <h3>Email: {{ mail }}</h3>
-        <button v-on:click="getUser()">Get new user</button>
+        <button v-on:click="getUser()" :class="gender">Get new user</button>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
